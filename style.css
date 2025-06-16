@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hero-banner {
+    background-image: url('https://images.pexels.com/photos/6214450/pexels-photo-6214450.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    width: 100%;
+    color: black;
+    border: 3px;
+    border-color: black;
+}
+.nav {
+    margin-top: 10px;
+    background-color: aqua;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.nav-links a {
+    font-weight: bold;
+    color: brown;
+}
+.nav-links a:hover {
+    color: green;
+}
+/* Product section */
+section {
+    padding: 40px 20px;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.product-card {
+    border-color: black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.product-card img {
+  margin-top: 10px;
+  height: min-content;
+  border-radius: 8px;
+}
+.shop-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.shop-btn:hover {
+  background-color: brown;
+}
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* responsive design */
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 2rem;
+}
+.product-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+
+  .shop-btn {
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-banner {
+    height: 80vh;
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+
+  .shop-btn {
+    font-size: 0.9rem;
+  }
+}
+/* Footer */
+footer {
+  background-color: pink;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.custom-navbar {
+  background-color: pink;
+}
